@@ -1,6 +1,6 @@
-# lesson01
+# lesson02
 
-## eslint
+## prettier
 
 INSTALL
-`yarn add eslint`
+`yarn add prettier`

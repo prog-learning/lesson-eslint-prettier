@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "lint": "eslint src/script.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "dependencies": {
     "eslint": "^7.18.0",
