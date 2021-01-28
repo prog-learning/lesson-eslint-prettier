@@ -1,0 +1,25 @@
+// コメントアウトが可能
+{
+  "extends": [
+    "eslint:recommended"
+    // pluginと使うにはここに書く
+  ],
+  // pluginを入れる
+  "plugins": [
+    // もうあるパーツ
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "semi": "error", //defaultになる
+    // 本当はこう
+    // "semi": ["error", "always"],
+    // "semi": ["error", "never"],
+    "quotes": ["warn", "single"]
+  }
+}
