@@ -1,13 +1,25 @@
 {
   "name": "lesson-eslint-prettier",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "lint": "eslint src/script.js"
-  },
+  "description": "",
+  "main": "main.js",
   "dependencies": {
-    "eslint": "^7.18.0"
-  }
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prog-learning/lesson-eslint-prettier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prog-learning/lesson-eslint-prettier/issues"
+  },
+  "homepage": "https://github.com/prog-learning/lesson-eslint-prettier#readme"
 }

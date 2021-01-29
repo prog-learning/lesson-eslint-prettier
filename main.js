@@ -1,6 +1,5 @@
+const func = () => {
+  console.log('good morning!!');
+};
 
-function hello(name) {
-  document.body.textContent = 'Hello, ' + name + '!';
-}
-
-hello('World');
+func();
