@@ -1,21 +1,7 @@
 // コメントアウトが可能
 {
-  "extends": [
-    "eslint:recommended",
-    // eslint-config-prettierを使う
-    "prettier"
-    // "eslint-plugin-prettier"を使う
-    // "plugin:prettier/recommended"
-    // pluginを使うにはここに書く
-  ],
-  // pluginを入れる
-  "plugins": [
-    // "eslint-plugin-prettier"を入れる
-    // "prettier"
-  ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
   "env": {
     "es6": true,
     "browser": true
@@ -26,14 +12,14 @@
     // "semi": ["error", "always"],
     // "semi": ["error", "never"],
     "quotes": ["warn", "single"],
-    "indent": ["error", 2],
-    // prettierの設定
-    "prettier/prettier": [
-      "error",
-      {
-        // "singleQuote": true,
-        // "trailingComma": "es5"
-      }
-    ]
+    "indent": ["error", 2]
+    // prettierの設定(別ファイルで書ける)
+    // "prettier/prettier": [
+    //   "error",
+    //   {
+    //     "singleQuote": true,
+    //     "trailingComma": "es5"
+    //   }
+    // ]
   }
 }
