@@ -1,10 +1,17 @@
 // console.log("double")
-console.log('double');
+console.log('double')
 
-type Name = string
+type Book = {
+  id: number
+  name: string
+}
 
-const hello = (name: Name) => {
-  document.body.textContent = 'Hello, ' + name + '!!';
-};
+const book = ({ id, name }: Book) => {
+  document.body.textContent = 'ID: ' + id + ', title: ' + name
+}
+const myBook = {
+  id: 123,
+  name: 'programming',
+}
 
-hello('eslint typescript');
+book(myBook)
