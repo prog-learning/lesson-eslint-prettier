@@ -6,6 +6,7 @@
   "extends": [
     "eslint:recommended", // ESLintの基本的なルールを有効にします。
     "plugin:@typescript-eslint/recommended", // TypeScriptの基本的なルールを有効にします。
+    "prettier",
     "prettier/@typescript-eslint" // Prettierと競合するTypeScriptの基本的なルールを無効にします。
   ],
   "plugins": ["@typescript-eslint"],
