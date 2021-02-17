@@ -1,19 +1,13 @@
 // コメントアウトが可能
 {
-  "extends": [
-    "eslint:recommended"
-    // pluginと使うにはここに書く
-  ],
-  // pluginを入れる
-  "plugins": [
-    // もうあるパーツ
-  ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
   "env": {
     "es6": true,
     "browser": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": [],
+  "parserOptions": {
+    "sourceType": "module"
   },
   "rules": {
     "semi": "error", //defaultになる
