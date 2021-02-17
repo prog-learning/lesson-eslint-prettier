@@ -1,8 +1,10 @@
 // console.log("double")
 console.log('double');
 
-const hello = (name) => {
+type Name = string
+
+const hello = (name: Name) => {
   document.body.textContent = 'Hello, ' + name + '!!';
 };
 
-hello('eslint');
+hello('eslint typescript');

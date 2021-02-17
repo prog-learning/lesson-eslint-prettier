@@ -1,23 +1,21 @@
-// コメントアウトが可能
 {
-  "extends": [
-    "eslint:recommended"
-  ],
-  "plugins": [
-    // もうあるパーツ
-  ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
   "env": {
     "es6": true,
     "browser": true
   },
+  "extends": [
+    "eslint:recommended", // ESLintの基本的なルールを有効にします。
+    "plugin:@typescript-eslint/recommended", // TypeScriptの基本的なルールを有効にします。
+    "plugin:prettier/recommended", // Prettierと競合するESLintのルールを無効にします。
+    "prettier/@typescript-eslint" // Prettierと競合するTypeScriptの基本的なルールを無効にします。
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parser": "@typescript-eslint/parser", // TypeScript用のパーサーを使用します。
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
-    "semi": "error", //defaultになる
-    // 本当はこう
-    // "semi": ["error", "always"],
-    // "semi": ["error", "never"],
+    "semi": "error",
     "quotes": ["warn", "single"],
     "no-console": "warn"
   }
