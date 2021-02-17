@@ -2,9 +2,7 @@
 {
   "extends": [
     "eslint:recommended"
-    // pluginと使うにはここに書く
   ],
-  // pluginを入れる
   "plugins": [
     // もうあるパーツ
   ],
