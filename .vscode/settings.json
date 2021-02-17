@@ -1,5 +1,8 @@
 {
+  "editor.formatOnSave": true, // 保存時に整形
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": true // eslintで整形
+  },
+  // デフォルトフォーマッタをprettierに
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

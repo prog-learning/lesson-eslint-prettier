@@ -1,0 +1,3 @@
+//Lintを回避するファイルを指定する
+node_modules/
+ignore.js

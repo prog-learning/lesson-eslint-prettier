@@ -20,6 +20,7 @@
     // 本当はこう
     // "semi": ["error", "always"],
     // "semi": ["error", "never"],
-    "quotes": ["warn", "single"]
+    "quotes": ["warn", "single"],
+    "no-console": "warn"
   }
 }
