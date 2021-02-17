@@ -1,23 +1,59 @@
-// コメントアウトが可能
 {
-  "extends": [
-    "eslint:recommended"
-  ],
-  "plugins": [
-    // もうあるパーツ
-  ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-  "rules": {
-    "semi": "error", //defaultになる
-    // 本当はこう
-    // "semi": ["error", "always"],
-    // "semi": ["error", "never"],
-    "quotes": ["warn", "single"]
-  }
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true,
+		"commonjs": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		// "plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"prettier",
+		"prettier/react",
+		"prettier/@typescript-eslint"
+	],
+	"plugins": ["prettier", "react-hooks", "react", "@typescript-eslint"],
+	"rules": {
+		"semi": "error", //defaultになる
+		// 本当はこう
+		// "semi": ["error", "always"],
+		// "semi": ["error", "never"],
+		"quotes": ["warn", "single"],
+		"indent": ["error", 2],
+		// TypeScirpt なので prop-types は要らない
+		"react/prop-types": "off",
+		// prettierの設定(別ファイルで書ける)
+		"prettier/prettier": [
+			"error",
+			{
+				// "singleQuote": true,
+				// "trailingComma": "es5"
+			}
+		]
+	},
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"rules": {
+				"@typescript-eslint/no-var-requires": "off",
+				"@typescript-eslint/explicit-function-return-type": "off"
+			}
+		}
+	]
 }

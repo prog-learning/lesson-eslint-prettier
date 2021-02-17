@@ -1,13 +1,26 @@
 {
-  "name": "lesson-eslint-prettier",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "lint": "eslint src/script.js"
-  },
-  "dependencies": {
-    "eslint": "^7.18.0"
-  }
+	"name": "lesson-eslint-prettier",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint ."
+	},
+	"dependencies": {
+		"typescript": "^4.1.5"
+	},
+	"devDependencies": {
+		"eslint": "^7.20.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"@types/styled-components": "^5.1.7",
+		"@typescript-eslint/eslint-plugin": "^4.15.1",
+		"@typescript-eslint/parser": "^4.15.1",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"prettier": "^2.2.1",
+		"typescript": "^4.1.5"
+	}
 }
