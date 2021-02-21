@@ -1,7 +1,3 @@
-## SETUP
+# Lesson
 
-1. npm install --save
-
-## RUN APPLICATION
-
-1. npm start
+styled-components に対応
