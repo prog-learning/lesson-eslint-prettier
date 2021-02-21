@@ -1,6 +1,7 @@
-# lesson01
+## SETUP
 
-## eslint
+1. npm install --save
 
-INSTALL
-`yarn add eslint`
+## RUN APPLICATION
+
+1. npm start

@@ -1,23 +1,45 @@
-// コメントアウトが可能
 {
-  "extends": [
-    "eslint:recommended"
-  ],
-  "plugins": [
-    // もうあるパーツ
-  ],
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-  "rules": {
-    "semi": "error", //defaultになる
-    // 本当はこう
-    // "semi": ["error", "always"],
-    // "semi": ["error", "never"],
-    "quotes": ["warn", "single"]
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": ["prettier", "prettier/react", "eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react", "prettier", "react-hooks"],
+    "rules": {
+      "react/display-name": "off",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": true,
+          "trailingComma": "all",
+          "singleQuote": false,
+          "printWidth": 120,
+          "tabWidth": 2
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "off",
+      "no-useless-escape": "off",
+      "no-console": "off",
+      "no-empty": "off"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+      }
+    }
   }
 }
