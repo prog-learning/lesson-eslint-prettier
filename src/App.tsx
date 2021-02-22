@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const App = () => {
+export const App: React.FC = () => {
+  console.log("aaa");
+  const [state, setState] = React.useState<string>();
   return <Styled>hello</Styled>;
 };
-
-export default App;
 
 const Styled = styled.h1`
   color: tomato;
