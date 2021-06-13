@@ -14,7 +14,12 @@
     "start": "react-scripts start",
     "build": "npm run clean && react-scripts build && gulp licenses",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
+    "format": "prettier --write .",
+    "test-all": "npx yarn-run-all lint check-types format lint:fix"
   },
   "devDependencies": {
     "@types/prettier": "^2.2.1",
@@ -22,17 +27,29 @@
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.1",
     "@types/styled-components": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
     "babel-plugin-module-resolver": "^4.1.0",
-    "eslint-config-prettier": "^8.0.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-babel-module": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.1.5"
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1",
+    "typescript": "^4.3.2"
   },
+   "lint-staged": {
+   "*.@(ts|tsx)": [
+     "yarn lint",
+     "yarn format",
+     "yarn lint:fix"
+   ]
+ },
   "browserslist": {
     "production": [
       ">0.2%",
