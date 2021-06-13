@@ -1,4 +1,8 @@
+.husky/
+.vscode/
 node_modules/
+.eslintrc.json
 .eslintrc.js
+.prettierrc
 package.json
 tsconfig.json
